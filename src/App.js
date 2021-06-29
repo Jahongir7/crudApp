@@ -14,7 +14,7 @@ const getLocalStorge = () => {
 
 function App() {
   const [name, setName] = useState("");
-  const [list, setList] = useState([getLocalStorge]);
+  const [list, setList] = useState(getLocalStorge);
   const [isEditing, setIsEditing] = useState(false);
   const [editID, setEditID] = useState(null);
   const [alert, setAlert] = useState({
